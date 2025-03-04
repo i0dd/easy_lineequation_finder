@@ -7,11 +7,11 @@ option = input("enter 1 for y intersept and  2 for x intercept")
 firstcord = input("enter the  first(biggest y cord) cord in format x,y : ")
 secondcord = input("enter the  second(lowest x cord) cord in format x,y : ")
 
-rise = int(firstcord[0]) - int(secondcord[0])
-idk = int(firstcord[2]) - int(secondcord[2])
-
 firstcord = tuple(map(int, firstcord.split(',')))
 secondcord = tuple(map(int, secondcord.split(',')))
+
+rise = int(firstcord[0]) - int(secondcord[0])
+idk = int(firstcord[2]) - int(secondcord[2])
 
 gradient = rise / idk
 

@@ -10,6 +10,9 @@ secondcord = input("enter the  second(lowest x cord) cord in format x,y : ")
 rise = int(firstcord[0]) - int(secondcord[0])
 idk = int(firstcord[2]) - int(secondcord[2])
 
+firstcord = tuple(map(int, firstcord.split(',')))
+secondcord = tuple(map(int, secondcord.split(',')))
+
 gradient = rise / idk
 
 c = int(firstcord[2]) - gradient * int(firstcord[0])
